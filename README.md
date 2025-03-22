@@ -1,2 +1,2 @@
-# Componentes-Reutiliz-veis-Angular
+# Componentes-Reutilizaveis-Angular
 Componentes reutilizáveis para utilizar.
