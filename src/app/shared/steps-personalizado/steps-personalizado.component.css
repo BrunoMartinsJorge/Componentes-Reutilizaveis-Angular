@@ -1,0 +1,57 @@
+.steps {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 0;
+  align-items: center;
+  justify-content: space-between;
+  grid-gap: 0;
+}
+
+.steps .grupo-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.steps .grupo-steps .linha-divisoria {
+  background-color: #656565;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-10px);
+}
+
+.steps .grupo-steps .linha-divisoria.ativo {
+  background-color: #036666;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.steps .step-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.steps .step-element .etapa {
+  color: #656565;
+  border: 2px #656565 solid;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.steps .step-element .etapa.ativo {
+  color: #036666;
+  border-color: #036666;
+  background-color: #88D4AB;
+}
+
+.steps .step-element .descricao-etapa{
+    color: #333;
+    font-size: 14px;
+    margin-top: 0.5em;
+}

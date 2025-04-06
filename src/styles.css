@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "primeicons/primeicons.css";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: url(../public/banner.jpg) center center no-repeat fixed;
+  background-size: cover;
+}
+
+:root {
+  /* Cor de sucesso */
+  --corSucesso: #1c7f13;
+  --corSucessoSecundaria: #729b64;
+  --bordaSucesso: 1px solid #73cf60;
+
+  /* Cor de erro */
+  --corErro: #fe0902;
+  --corErroSecundaria: #ea6344;
+  --bordaErro: 1px solid #f07b5a;
+
+  /* Cor de alerta */
+  --corAlerta: #fbbd50;
+  --corAlertaSecundaria: #d2994f;
+  --bordaAlerta: 1px solid #fca61d;
+
+  /* Cor de informação */
+  --corInformacao: #3d4f8e;
+  --corInformacaoSecundaria: #c0c0df;
+  --bordaInformacao: 1px solid #aeb1f0;
+}

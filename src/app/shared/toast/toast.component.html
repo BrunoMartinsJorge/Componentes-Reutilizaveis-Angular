@@ -1,0 +1,21 @@
+<div class="container">
+  <div
+    *ngFor="let toast of toasts$ | async"
+    [ngClass]="'body-toast' + ' ' + toast.tipo"
+    [@fadeInOut]
+  >
+    <i
+      [ngClass]="toast.icone ? 'pi pi-' + toast.icone : 'pi pi-info-circle'"
+    ></i>
+    <div class="divisao-vertical"></div>
+    <div>
+      <div class="header-toast">
+        {{ toast.tituloMenssagem }}
+      </div>
+      <div class="divisao"></div>
+      <p>
+        {{ toast.menssagem }}
+      </p>
+    </div>
+  </div>
+</div>

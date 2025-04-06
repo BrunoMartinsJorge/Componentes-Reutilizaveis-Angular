@@ -1,0 +1,20 @@
+<app-carregamento *ngIf="carregando"></app-carregamento>
+<main [ngClass]="isLogin ? 'login' : 'cadastro'">
+  <section class="banner-empresa">
+    <div class="logo-banner">
+      <div class="img-logo"></div>
+      <h2 class="titulo-empresa" (click)="isLogin = !isLogin">
+        <span id="animal">Animal</span><i>&</i><span id="cuidado">Care</span>
+      </h2>
+    </div>
+  </section>
+  <section class="formulario">
+    <div *ngIf="isLogin; else tela_cadastro">
+      <app-login (alterarLogin)="alterarFormulario()"></app-login>
+    </div>
+    <ng-template #tela_cadastro>
+      <app-cadastro (alterarLogin)="alterarFormulario()"></app-cadastro>
+    </ng-template>
+  </section>
+</main>
+<app-dialog dialogTitle="Teste"></app-dialog>
