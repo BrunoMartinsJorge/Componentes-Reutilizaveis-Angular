@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
 import { SegurancaContaGuard } from './Guard/seguranca-conta.guard';
-import { NaoEncontradaComponent } from './Pages/nao-encontrada/nao-encontrada.component';
-import { PaginaLoginCadastroComponent } from './Pages/pagina-login-cadastro/pagina-login-cadastro.component';
+import { AppComponent } from './app.component';
+/*import { NaoEncontradaComponent } from './Pages/nao-encontrada/nao-encontrada.component';
+import { PaginaLoginCadastroComponent } from './Pages/pagina-login-cadastro/pagina-login-cadastro.component';*/
 
 export const routes: Routes = [
-  {
+  /*{
     path: '',
     canActivate: [SegurancaContaGuard],
     loadComponent: () =>
@@ -17,14 +18,14 @@ export const routes: Routes = [
       import('./Pages/teste-login/usuario/usuario.component').then(
         (m) => m.UsuarioComponent
       ),
-  },
+  },*/
   {
     path: 'entre-cadastrar',
-    component: PaginaLoginCadastroComponent,
+    component: AppComponent,
     
   },
   {
     path: '**',
-    component: NaoEncontradaComponent,
+    component: AppComponent,
   },
 ];
