@@ -1,0 +1,22 @@
+<section class="steps">
+  <div class="grupo-steps" *ngFor="let step of listaDeSteps">
+    <div
+      class="linha-divisoria"
+      *ngIf="buscarIndicie(step) != 0"
+      [ngClass]="step.ativo ? 'ativo' : ''"
+    ></div>
+    <div class="step-element">
+      <div class="etapa" [ngClass]="step.ativo ? 'ativo' : ''">
+        {{ buscarIndicie(step) + 1 }}
+      </div>
+      <div class="descricao-etapa">
+        {{ step.label }}
+      </div>
+    </div>
+    <div
+      class="linha-divisoria"
+      *ngIf="listaDeSteps.length != buscarIndicie(step) + 1"
+      [ngClass]="step.ativo ? 'ativo' : ''"
+    ></div>
+  </div>
+</section>
